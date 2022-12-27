@@ -17,13 +17,11 @@
         let guess = null
         let time = 0
         const randomInt = Math.floor(Math.random() * to) + 1
-        while (guess != to) {
+        while (guess != randomInt) {
           guess = parseInt(prompt("Nhập vào số bạn đoán:"))
           if (guess == randomInt) {
             alert("Bạn đã đoán đúng")
-            return
           }
-          time++
           if (time == 3) {
             alert("Bạn đã đoán sai, vui lòng chơi lại")
             return
